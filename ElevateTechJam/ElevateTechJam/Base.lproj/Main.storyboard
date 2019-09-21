@@ -24,7 +24,7 @@
                                     <view verifyAmbiguity="off" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RD4-El-uDp">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
                                         <subviews>
-                                            <view verifyAmbiguity="off" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vbt-y0-oXM" customClass="ElevateRoundedView" customModule="ElevateTechJam" customModuleProvider="target">
+                                            <view verifyAmbiguity="off" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vbt-y0-oXM">
                                                 <rect key="frame" x="8" y="8" width="359" height="718"/>
                                                 <subviews>
                                                     <label verifyAmbiguity="off" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rogers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLq-Jr-t9C">
@@ -42,7 +42,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoi-oU-8uW">
                                                         <rect key="frame" x="8" y="80.333333333333343" width="343" height="249.00000000000003"/>
                                                         <subviews>
-                                                            <view verifyAmbiguity="off" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKd-1j-XUE" customClass="ElevateRoundedView" customModule="ElevateTechJam" customModuleProvider="target">
+                                                            <view verifyAmbiguity="off" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKd-1j-XUE">
                                                                 <rect key="frame" x="16" y="16" width="311" height="89"/>
                                                                 <subviews>
                                                                     <label verifyAmbiguity="off" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billing Period" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elb-1l-cyv">
@@ -79,11 +79,6 @@
                                                                     <constraint firstItem="ScM-T4-xpw" firstAttribute="leading" secondItem="DKd-1j-XUE" secondAttribute="leading" constant="8" id="npl-dQ-OKN"/>
                                                                     <constraint firstItem="ScM-T4-xpw" firstAttribute="top" secondItem="Elb-1l-cyv" secondAttribute="bottom" constant="8" id="qL4-gI-23Q"/>
                                                                 </constraints>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                                        <color key="value" red="1" green="0.0" blue="0.060358078400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <button verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P96-xK-m1o" customClass="ElevateButton" customModule="ElevateTechJam" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="120.99999999999997" width="311" height="48"/>
@@ -96,13 +91,8 @@
                                                                 <state key="normal" title="Make Payment">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="didSelectMakePayment:" destination="zz6-nQ-7jF" eventType="touchUpInside" id="8K0-mv-BYS"/>
+                                                                    <action selector="didTapPayment:" destination="zz6-nQ-7jF" eventType="touchUpInside" id="I2V-Hz-wYd"/>
                                                                 </connections>
                                                             </button>
                                                             <button verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6Q-dw-1iA" customClass="ElevateButton" customModule="ElevateTechJam" customModuleProvider="target">
@@ -116,11 +106,6 @@
                                                                 <state key="normal" title="View Bill">
                                                                     <color key="titleColor" red="1" green="0.0" blue="0.060358078400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                                        <color key="value" red="1" green="0.0" blue="0.060358078400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -152,11 +137,6 @@
                                                     <constraint firstAttribute="trailing" secondItem="GLq-Jr-t9C" secondAttribute="trailing" constant="8" id="xmG-eX-5vg"/>
                                                     <constraint firstItem="FJa-YP-R7k" firstAttribute="leading" secondItem="Vbt-y0-oXM" secondAttribute="leading" constant="8" id="xwa-TQ-vzd"/>
                                                 </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -190,10 +170,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="HoW-gG-r0n"/>
                     <connections>
-                        <outlet property="billButton" destination="P96-xK-m1o" id="XeI-8f-iUg"/>
-                        <outlet property="parentView" destination="eoi-oU-8uW" id="d5x-Wi-207"/>
+                        <outlet property="billButton" destination="P96-xK-m1o" id="B0W-ME-gvI"/>
+                        <outlet property="parentView" destination="eoi-oU-8uW" id="QMA-xv-BAt"/>
                         <outlet property="view" destination="mXy-b0-dGc" id="cXl-y3-sGr"/>
-                        <outlet property="viewBill" destination="R6Q-dw-1iA" id="WQb-HS-gHt"/>
+                        <outlet property="viewBill" destination="R6Q-dw-1iA" id="Mwe-fN-hRY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDN-e8-Hyh" userLabel="First Responder" sceneMemberID="firstResponder"/>

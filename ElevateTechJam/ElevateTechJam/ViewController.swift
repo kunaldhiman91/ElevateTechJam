@@ -10,18 +10,38 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let vm = DeviceViewModel()
+    
+    @IBOutlet weak var parentView: UIView! {
+        didSet {
+            self.parentView.layer.borderColor = UIColor.red.cgColor
+            self.parentView.layer.borderWidth = 1
+            self.parentView.layer.cornerRadius = 16.0
+        }
+    }
+    
+    
+    @IBAction func didTapPayment(_ sender: Any) {
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if let vc = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
+            vc.memberData = vm.memberDetail
+            self.navigationController?.pushViewController(vc,
+                                                          animated: true)
+        }
+    }
+    @IBOutlet weak var billButton: ElevateButton!
+    
+    @IBOutlet weak var viewBill: ElevateButton! {
+        didSet {
+            self.viewBill.layer.borderColor = UIColor.red.cgColor
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
-        let vm = DeviceViewModel()
-        if let deviceData = vm.getDeviceData() {
-            
-            print(deviceData.devicesMap.preOwned.modelMap.prod1220510.displayName.en)
-        print(deviceData.devicesMap.clearance.modelMap.prod900427.skusByMemory[0].wirelessSKUMap[0].displayName.en)
-            
-        }
+        vm.getDeviceData()
         
     }
 }

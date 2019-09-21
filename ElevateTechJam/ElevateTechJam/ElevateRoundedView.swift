@@ -26,6 +26,7 @@ import UIKit
     
     func sharedInit() {
         self.layer.cornerRadius = 16.0
+        self.layer.borderWidth = 1.0
     }
     
 }
