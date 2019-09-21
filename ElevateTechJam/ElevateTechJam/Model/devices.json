@@ -7,10 +7,9 @@
             "shouldDisplayCreditCard": true
         },
         {
-            "creditCard": "**** **** **** 0022",
             "phoneNumber": "417-xxx-3111",
             "amount": "$70.00",
-            "shouldDisplayCreditCard": true
+            "shouldDisplayCreditCard": false
         },
         {
             "phoneNumber": "418-xxx-3222",
