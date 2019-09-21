@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         if let deviceData = vm.getDeviceData() {
             
             print(deviceData.devicesMap.preOwned.modelMap.prod1220510.displayName.en)
+        print(deviceData.devicesMap.clearance.modelMap.prod900427.skusByMemory[0].wirelessSKUMap[0].displayName.en)
             
         }
         
