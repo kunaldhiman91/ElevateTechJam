@@ -9,17 +9,22 @@
 import Foundation
 
 class DeviceViewModel {
-    func getDeviceData() -> Todos? {
+    
+    var memberDetail: MemberDetail = MemberDetail(data: [])
+    
+    var data: [UserData] = [UserData]()
+    
+    func getDeviceData() {
         if let url = Bundle.main.url(forResource: "devices", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(Todos.self, from: data)
-                return jsonData
+                let jsonData = try decoder.decode(MemberDetail.self, from: data)
+                self.memberDetail = jsonData
+                self.data = jsonData.data
             } catch (let error) {
                 print(error.localizedDescription)
             }
         }
-        return nil
     }
 }

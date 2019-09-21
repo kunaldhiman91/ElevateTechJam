@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5824D3C32336B36200C3C95E /* ConnectionDetailCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5824D3C12336B36200C3C95E /* ConnectionDetailCellTableViewCell.swift */; };
+		5824D3C42336B36200C3C95E /* ConnectionDetailCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5824D3C22336B36200C3C95E /* ConnectionDetailCellTableViewCell.xib */; };
 		58654E3D23366373009EF37F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58654E3C23366373009EF37F /* AppDelegate.swift */; };
 		58654E3F23366373009EF37F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58654E3E23366373009EF37F /* ViewController.swift */; };
 		58654E4223366373009EF37F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58654E4023366373009EF37F /* Main.storyboard */; };
@@ -15,9 +17,15 @@
 		58654E502336638D009EF37F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58654E4F2336638D009EF37F /* Model.swift */; };
 		58654E5323366426009EF37F /* devices.json in Resources */ = {isa = PBXBuildFile; fileRef = 58654E5223366426009EF37F /* devices.json */; };
 		58654E5623366448009EF37F /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58654E5523366448009EF37F /* DeviceViewModel.swift */; };
+		58654E5B233699C7009EF37F /* ElevateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58654E5A233699C7009EF37F /* ElevateButton.swift */; };
+		58654E5D23369C98009EF37F /* ElevateRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58654E5C23369C98009EF37F /* ElevateRoundedView.swift */; };
+		58E292AE2336C5E9001762E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E292AD2336C5E9001762E4 /* DetailViewController.swift */; };
+		58E292B02336C613001762E4 /* FamilyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E292AF2336C613001762E4 /* FamilyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5824D3C12336B36200C3C95E /* ConnectionDetailCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionDetailCellTableViewCell.swift; sourceTree = "<group>"; };
+		5824D3C22336B36200C3C95E /* ConnectionDetailCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectionDetailCellTableViewCell.xib; sourceTree = "<group>"; };
 		58654E3923366373009EF37F /* ElevateTechJam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElevateTechJam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58654E3C23366373009EF37F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58654E3E23366373009EF37F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +36,10 @@
 		58654E4F2336638D009EF37F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		58654E5223366426009EF37F /* devices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = devices.json; sourceTree = "<group>"; };
 		58654E5523366448009EF37F /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
+		58654E5A233699C7009EF37F /* ElevateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevateButton.swift; sourceTree = "<group>"; };
+		58654E5C23369C98009EF37F /* ElevateRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevateRoundedView.swift; sourceTree = "<group>"; };
+		58E292AD2336C5E9001762E4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		58E292AF2336C613001762E4 /* FamilyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,10 @@
 				58654E4323366375009EF37F /* Assets.xcassets */,
 				58654E4523366375009EF37F /* LaunchScreen.storyboard */,
 				58654E4823366375009EF37F /* Info.plist */,
+				58654E5A233699C7009EF37F /* ElevateButton.swift */,
+				58654E5C23369C98009EF37F /* ElevateRoundedView.swift */,
+				58E292AD2336C5E9001762E4 /* DetailViewController.swift */,
+				58E292AF2336C613001762E4 /* FamilyTableViewController.swift */,
 			);
 			path = ElevateTechJam;
 			sourceTree = "<group>";
@@ -77,6 +93,8 @@
 			children = (
 				58654E5223366426009EF37F /* devices.json */,
 				58654E4F2336638D009EF37F /* Model.swift */,
+				5824D3C12336B36200C3C95E /* ConnectionDetailCellTableViewCell.swift */,
+				5824D3C22336B36200C3C95E /* ConnectionDetailCellTableViewCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +169,7 @@
 				58654E4423366375009EF37F /* Assets.xcassets in Resources */,
 				58654E4223366373009EF37F /* Main.storyboard in Resources */,
 				58654E5323366426009EF37F /* devices.json in Resources */,
+				5824D3C42336B36200C3C95E /* ConnectionDetailCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +181,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				58654E5623366448009EF37F /* DeviceViewModel.swift in Sources */,
+				58654E5D23369C98009EF37F /* ElevateRoundedView.swift in Sources */,
 				58654E502336638D009EF37F /* Model.swift in Sources */,
+				58E292B02336C613001762E4 /* FamilyTableViewController.swift in Sources */,
+				5824D3C32336B36200C3C95E /* ConnectionDetailCellTableViewCell.swift in Sources */,
+				58654E5B233699C7009EF37F /* ElevateButton.swift in Sources */,
 				58654E3F23366373009EF37F /* ViewController.swift in Sources */,
 				58654E3D23366373009EF37F /* AppDelegate.swift in Sources */,
+				58E292AE2336C5E9001762E4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
