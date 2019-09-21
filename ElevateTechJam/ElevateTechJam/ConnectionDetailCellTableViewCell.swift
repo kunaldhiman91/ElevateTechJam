@@ -17,6 +17,7 @@ class ConnectionDetailCellTableViewCell: UITableViewCell {
             self.payButton.isHidden = !_userData.shouldDisplayCreditCard
             self.phoneNumber.text = _userData.phoneNumber
             self.amount.text = _userData.amount
+            self.nameLabel.text = _userData.name
         }
         
     }
@@ -34,6 +35,9 @@ class ConnectionDetailCellTableViewCell: UITableViewCell {
     @IBOutlet weak var phoneNumber: UILabel!
     
     @IBOutlet weak var amount: UILabel!
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

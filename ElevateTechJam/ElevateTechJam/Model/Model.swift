@@ -15,6 +15,7 @@ struct MemberDetail: Codable {
 
 struct UserData: Codable {
     let creditCard: String?
+    let name: String
     let phoneNumber: String
     let amount: String
     let shouldDisplayCreditCard: Bool

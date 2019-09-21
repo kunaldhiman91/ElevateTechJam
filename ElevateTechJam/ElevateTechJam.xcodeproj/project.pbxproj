@@ -76,6 +76,8 @@
 				58654E4E2336637E009EF37F /* Model */,
 				58654E3C23366373009EF37F /* AppDelegate.swift */,
 				58654E3E23366373009EF37F /* ViewController.swift */,
+				5824D3C12336B36200C3C95E /* ConnectionDetailCellTableViewCell.swift */,
+				5824D3C22336B36200C3C95E /* ConnectionDetailCellTableViewCell.xib */,
 				58654E4023366373009EF37F /* Main.storyboard */,
 				58654E4323366375009EF37F /* Assets.xcassets */,
 				58654E4523366375009EF37F /* LaunchScreen.storyboard */,
@@ -93,8 +95,6 @@
 			children = (
 				58654E5223366426009EF37F /* devices.json */,
 				58654E4F2336638D009EF37F /* Model.swift */,
-				5824D3C12336B36200C3C95E /* ConnectionDetailCellTableViewCell.swift */,
-				5824D3C22336B36200C3C95E /* ConnectionDetailCellTableViewCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";

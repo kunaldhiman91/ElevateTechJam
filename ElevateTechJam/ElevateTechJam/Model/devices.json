@@ -1,35 +1,41 @@
 {
     "data": [
         {
+            "name": "Chandler",
             "creditCard": "**** **** **** 0011",
             "phoneNumber": "416-xxx-3000",
             "amount": "$70.00",
             "shouldDisplayCreditCard": true
         },
         {
+            "name": "Rachel Green",
             "phoneNumber": "417-xxx-3111",
-            "amount": "$70.00",
+            "amount": "$20.00",
             "shouldDisplayCreditCard": false
         },
         {
+            "name": "Ross",
             "phoneNumber": "418-xxx-3222",
-            "amount": "$70.00",
+            "amount": "$90.00",
             "shouldDisplayCreditCard": false
         },
         {
+            "name": "Phoebe",
             "phoneNumber": "419-xxx-3333",
-            "amount": "$70.00",
+            "amount": "$20.00",
             "shouldDisplayCreditCard": false
         },
         {
+            "name": "Joe",
             "phoneNumber": "420-xxx-3444",
-            "amount": "$70.00",
+            "amount": "$10.00",
             "shouldDisplayCreditCard": false
         },
         {
+            "name": "Monica",
             "creditCard": "**** **** **** 0099",
             "phoneNumber": "421-xxx-3555",
-            "amount": "$70.00",
+            "amount": "$50.00",
             "shouldDisplayCreditCard": true
         }
     ]
