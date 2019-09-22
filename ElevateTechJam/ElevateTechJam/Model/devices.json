@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "card":"**** **** **** 0011",
+            "card":"****-0011 MasterCard",
             "amount":"$300.00",
             "name":"Chandler",
             "data": [
@@ -20,9 +20,9 @@
             ]
         },
         {
-            "card":"**** **** **** 0099",
+            "card":"****-0099 VISA",
             "amount":"$480.00",
-            "name":"Rachel Green",
+            "name":"Rachel",
             "data": [
                 {
                     "name": "Rachel Green",

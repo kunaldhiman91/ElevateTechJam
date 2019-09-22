@@ -10,14 +10,14 @@ import Foundation
 
 struct MemberDetail: Codable {
    
-    let data: [CardDetail]
+    var data: [CardDetail]
 }
 
 struct CardDetail: Codable {
     let name: String?
     let card: String?
     let amount: String?
-    let data: [UserData]
+    var data: [UserData]
 }
 
 struct UserData: Codable {

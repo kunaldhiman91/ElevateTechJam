@@ -39,11 +39,24 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ConnectionDetailCellTableViewCell
+        cell.tag = indexPath.row
+        cell.detailVC = self
         
         let userData = self.memberData?.data[indexPath.row]
         cell.cardData = userData
 
         return cell
+    }
+
+    func moveFromCell(cell:ConnectionDetailCellTableViewCell, index: Int) {
+        if cell.tag == 0 {
+            let userData = self.memberData!.data[0].data.remove(at: index)
+            self.memberData!.data[1].data.append(userData)
+        } else {
+            let userData = self.memberData!.data[1].data.remove(at: index)
+            self.memberData!.data[0].data.append(userData)
+        }
+        familyTableView.reloadData()
     }
 }
 
