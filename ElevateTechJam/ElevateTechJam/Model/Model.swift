@@ -10,11 +10,17 @@ import Foundation
 
 struct MemberDetail: Codable {
    
+    let data: [CardDetail]
+}
+
+struct CardDetail: Codable {
+    let name: String?
+    let card: String?
+    let amount: String?
     let data: [UserData]
 }
 
 struct UserData: Codable {
-    let creditCard: String?
     let name: String
     let phoneNumber: String
     let amount: String

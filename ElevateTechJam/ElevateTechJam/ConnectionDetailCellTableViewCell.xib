@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,58 +14,68 @@
             <rect key="frame" x="0.0" y="0.0" width="553" height="190"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="553" height="189.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="553" height="190"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcy-Zm-ZtS" customClass="ElevateRoundedView" customModule="ElevateTechJam" customModuleProvider="target">
-                        <rect key="frame" x="16" y="16" width="521" height="157.5"/>
+                        <rect key="frame" x="16" y="16" width="355.5" height="158"/>
                         <subviews>
                             <label verifyAmbiguity="off" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRg-4C-eP7">
-                                <rect key="frame" x="16" y="16" width="489" height="48.5"/>
+                                <rect key="frame" x="16" y="16" width="67.5" height="29"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="416-xxx-1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wic-AG-adz">
-                                <rect key="frame" x="16" y="72.5" width="489" height="29"/>
+                                <rect key="frame" x="16" y="53" width="323.5" height="29"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dTQ-Ku-G9J">
-                                <rect key="frame" x="16" y="117.5" width="316" height="24"/>
+                                <rect key="frame" x="83.5" y="18.5" width="256" height="24"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$70.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esn-SL-h4E">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$70.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esn-SL-h4E">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h6-iW-jMQ" customClass="ElevateButton" customModule="ElevateTechJam" customModuleProvider="target">
-                                        <rect key="frame" x="166" y="0.0" width="150" height="24"/>
+                                        <rect key="frame" x="136" y="0.0" width="120" height="24"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.060358078400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="0C6-fM-1tc"/>
-                                            <constraint firstAttribute="width" constant="150" id="p8X-st-wvp"/>
+                                            <constraint firstAttribute="width" constant="120" id="p8X-st-wvp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Tap To Pay">
+                                        <state key="normal" title="PAY">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s48-Rp-tTJ">
+                                <rect key="frame" x="16" y="90" width="323.5" height="52"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="0fT-sv-o0f"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gRg-4C-eP7" firstAttribute="leading" secondItem="kcy-Zm-ZtS" secondAttribute="leading" constant="16" id="3CT-ro-GaR"/>
-                            <constraint firstAttribute="bottom" secondItem="dTQ-Ku-G9J" secondAttribute="bottom" constant="16" id="3E3-ya-U3e"/>
-                            <constraint firstItem="dTQ-Ku-G9J" firstAttribute="leading" secondItem="kcy-Zm-ZtS" secondAttribute="leading" constant="16" id="4Cw-Ex-494"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dTQ-Ku-G9J" secondAttribute="trailing" constant="16" id="9NZ-88-NPP"/>
+                            <constraint firstItem="gRg-4C-eP7" firstAttribute="trailing" secondItem="kcy-Zm-ZtS" secondAttribute="centerX" id="4EH-84-SbA"/>
+                            <constraint firstAttribute="trailing" secondItem="dTQ-Ku-G9J" secondAttribute="trailing" constant="16" id="9NZ-88-NPP"/>
+                            <constraint firstAttribute="bottom" secondItem="s48-Rp-tTJ" secondAttribute="bottom" constant="16" id="9og-Dj-MKM"/>
+                            <constraint firstItem="dTQ-Ku-G9J" firstAttribute="centerY" secondItem="gRg-4C-eP7" secondAttribute="centerY" id="FFB-qq-soR"/>
+                            <constraint firstAttribute="trailing" secondItem="s48-Rp-tTJ" secondAttribute="trailing" constant="16" id="FWB-Op-qKr"/>
+                            <constraint firstItem="s48-Rp-tTJ" firstAttribute="top" secondItem="wic-AG-adz" secondAttribute="bottom" constant="8" id="RnM-p6-byO"/>
                             <constraint firstItem="wic-AG-adz" firstAttribute="top" secondItem="gRg-4C-eP7" secondAttribute="bottom" constant="8" id="TRg-rH-JGK"/>
-                            <constraint firstItem="dTQ-Ku-G9J" firstAttribute="top" secondItem="wic-AG-adz" secondAttribute="bottom" constant="16" id="ZPB-4B-ll7"/>
                             <constraint firstAttribute="trailing" secondItem="wic-AG-adz" secondAttribute="trailing" constant="16" id="e4r-Kx-oNQ"/>
-                            <constraint firstAttribute="trailing" secondItem="gRg-4C-eP7" secondAttribute="trailing" constant="16" id="rMg-0Q-84z"/>
+                            <constraint firstItem="s48-Rp-tTJ" firstAttribute="leading" secondItem="kcy-Zm-ZtS" secondAttribute="leading" constant="16" id="pZv-ra-yVi"/>
+                            <constraint firstItem="gRg-4C-eP7" firstAttribute="trailing" secondItem="dTQ-Ku-G9J" secondAttribute="leading" id="r7Q-tk-RlZ"/>
                             <constraint firstItem="wic-AG-adz" firstAttribute="leading" secondItem="kcy-Zm-ZtS" secondAttribute="leading" constant="16" id="ufH-Oa-GCR"/>
                             <constraint firstItem="gRg-4C-eP7" firstAttribute="top" secondItem="kcy-Zm-ZtS" secondAttribute="top" constant="16" id="yZr-Cf-bsv"/>
                         </constraints>
@@ -86,6 +94,8 @@
                 <outlet property="amount" destination="esn-SL-h4E" id="CVy-nl-g2Z"/>
                 <outlet property="nameLabel" destination="gRg-4C-eP7" id="Nag-8J-iab"/>
                 <outlet property="payButton" destination="8h6-iW-jMQ" id="Tv5-eV-7Ik"/>
+                <outlet property="phoneListView" destination="s48-Rp-tTJ" id="rpC-Qz-JfH"/>
+                <outlet property="phoneListViewHeight" destination="0fT-sv-o0f" id="xXv-sU-rJI"/>
                 <outlet property="phoneNumber" destination="wic-AG-adz" id="son-pB-7v6"/>
                 <outlet property="roundedView" destination="kcy-Zm-ZtS" id="ufe-1J-K48"/>
             </connections>

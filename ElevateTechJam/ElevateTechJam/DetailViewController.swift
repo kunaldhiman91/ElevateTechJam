@@ -19,7 +19,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
          self.familyTableView.register(UINib(nibName: "ConnectionDetailCellTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         self.familyTableView.delegate = self
         self.familyTableView.dataSource = self
-        self.familyTableView.estimatedRowHeight = 100.0
+        self.familyTableView.estimatedRowHeight = 150
         self.familyTableView.rowHeight = UITableView.automaticDimension
         //self.familyTableView.reloadData()
     }
@@ -41,11 +41,10 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ConnectionDetailCellTableViewCell
         
         let userData = self.memberData?.data[indexPath.row]
-        cell.userData = userData
-        
+        cell.cardData = userData
+
         return cell
     }
-    
 }
 
 

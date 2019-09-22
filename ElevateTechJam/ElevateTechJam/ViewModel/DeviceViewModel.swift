@@ -12,6 +12,7 @@ class DeviceViewModel {
     
     var memberDetail: MemberDetail = MemberDetail(data: [])
     
+    var cards: [CardDetail] = [CardDetail]()
     var data: [UserData] = [UserData]()
     
     func getDeviceData() {
@@ -21,7 +22,7 @@ class DeviceViewModel {
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(MemberDetail.self, from: data)
                 self.memberDetail = jsonData
-                self.data = jsonData.data
+                self.cards = jsonData.data
             } catch (let error) {
                 print(error.localizedDescription)
             }
