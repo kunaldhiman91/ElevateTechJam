@@ -79,7 +79,7 @@ class ConnectionDetailCellTableViewCell: UITableViewCell {
             tag = tag + 1
         }
 
-        self.amount.text = "$\(self.phoneList.count * 25).00"
+        self.amount.text = "$\(self.phoneList.count * 90).00"
 
         phoneListViewHeight.constant = top
 

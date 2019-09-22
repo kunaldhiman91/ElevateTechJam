@@ -53,7 +53,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         let optionMenu = UIAlertController(title: nil, message: "Move to Card", preferredStyle: .actionSheet)
 
         for card: CardDetail in self.memberData!.data {
-            let cardAction = UIAlertAction(title: card.card, style: .default) { (action: UIAlertAction) in
+            let cardAction = UIAlertAction(title: card.name! + " " + card.card!, style: .default) { (action: UIAlertAction) in
                 let userData = self.memberData!.data[cell.tag].data.remove(at: index)
                 let index = self.memberData!.indexOfCardWithNumber(number: card.card!)
                 self.memberData!.data[index].data.append(userData)
