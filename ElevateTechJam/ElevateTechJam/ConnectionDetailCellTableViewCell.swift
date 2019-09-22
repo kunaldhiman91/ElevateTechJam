@@ -19,9 +19,7 @@ class ConnectionDetailCellTableViewCell: UITableViewCell {
 
         didSet {
             guard let _cardData = self.cardData else { return }
-            self.payButton.isHidden = false//!_userData.shouldDisplayCreditCard
             self.phoneNumber.text = _cardData.card
-            self.amount.text = _cardData.amount
             self.nameLabel.text = _cardData.name
 
             self.phoneList = _cardData.data
@@ -80,6 +78,8 @@ class ConnectionDetailCellTableViewCell: UITableViewCell {
             top = top + 58.0
             tag = tag + 1
         }
+
+        self.amount.text = "$\(self.phoneList.count * 25).00"
 
         phoneListViewHeight.constant = top
 

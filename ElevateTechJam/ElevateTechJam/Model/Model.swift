@@ -11,12 +11,20 @@ import Foundation
 struct MemberDetail: Codable {
    
     var data: [CardDetail]
+
+    func indexOfCardWithNumber(number:String) -> Int {
+        for i: Int in 0..<data.count {
+            if data[i].card == number {
+                return i
+            }
+        }
+        return -1
+    }
 }
 
 struct CardDetail: Codable {
     let name: String?
     let card: String?
-    let amount: String?
     var data: [UserData]
 }
 

@@ -49,14 +49,25 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func moveFromCell(cell:ConnectionDetailCellTableViewCell, index: Int) {
-        if cell.tag == 0 {
-            let userData = self.memberData!.data[0].data.remove(at: index)
-            self.memberData!.data[1].data.append(userData)
-        } else {
-            let userData = self.memberData!.data[1].data.remove(at: index)
-            self.memberData!.data[0].data.append(userData)
+
+        let optionMenu = UIAlertController(title: nil, message: "Move to Card", preferredStyle: .actionSheet)
+
+        for card: CardDetail in self.memberData!.data {
+            let cardAction = UIAlertAction(title: card.card, style: .default) { (action: UIAlertAction) in
+                let userData = self.memberData!.data[cell.tag].data.remove(at: index)
+                let index = self.memberData!.indexOfCardWithNumber(number: card.card!)
+                self.memberData!.data[index].data.append(userData)
+                self.familyTableView.reloadData()
+            }
+            optionMenu.addAction(cardAction)
         }
-        familyTableView.reloadData()
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        optionMenu.addAction(cancelAction)
+
+        // 5
+        self.present(optionMenu, animated: true, completion: nil)
+
+
     }
 }
 
